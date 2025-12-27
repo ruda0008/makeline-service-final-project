@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0  # Required for SonarCloud to read history
 
@@ -24,7 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          # 👇👇👇 YOU MUST UPDATE THESE TWO LINES 👇👇👇
+          #  YOU MUST UPDATE THESE TWO LINES
           args: >
             -Dsonar.organization=ruda0008
             -Dsonar.projectKey=ruda0008_makeline-service-final-project
