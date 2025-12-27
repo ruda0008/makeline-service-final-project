@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-jobs:
+jobs: 
   # ------------------------------------------------------------------
   # JOB 1: CODE SECURITY (SonarCloud)
   # Fix: We inject the keys directly here so no extra file is needed.
